@@ -1,46 +1,60 @@
 # 📊 PHP Admin Panel
 
-This project is a **PHP-based web application** 🖥️ developed by **Iqbolshoh Ilhomjonov** 👨‍💻. The application includes various features such as **user alerts**, **data tables**, **a dynamic navigation menu**, and a **customizable admin panel with a banner** 🏆🎯.  
+**PHP Admin Panel** is a lightweight, ready-to-extend **admin dashboard template** built with **PHP, Bootstrap 5, and AdminLTE 3**. It provides a data-driven sidebar menu, a breadcrumb-aware page header, stat cards, and a SweetAlert2-powered logout confirmation — a clean starting point for building your own admin backend on top of it.
 
-![Banner](./src/images/banner.png)  
+<p align="left">
+  <img src="https://img.shields.io/badge/PHP-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="License">
+</p>
 
----
+![Banner](./src/images/banner.png)
 
-## ⚙️ Installation 🏗️  
+## 📚 Table of Contents
 
-To run this project locally, follow these steps:  
+- [Features](#-features)
+- [Installation](#️-installation)
+- [Adding Sidebar Menu Items](#-adding-sidebar-menu-items)
+- [Project Structure](#-project-structure)
+- [Technologies Used](#-technologies-used)
+- [License](#-license)
+- [Contributing](#-contributing)
+- [Connect with Me](#-connect-with-me)
 
-1️⃣ **Clone the repository** 📂:  
-   ```bash
-   git clone https://github.com/iqbolshoh/php-admin-panel.git
-   ```  
-2️⃣ **Navigate to the project directory** 📁:  
-   ```bash
-   cd php-admin-panel
-   ```  
-3️⃣ **Set up a local server** 🌍 (e.g., **XAMPP, WAMP, MAMP**) and place the project files in the server's root directory **(htdocs/www)**.  
+## ✨ Features
 
----
+✅ **Data-Driven Sidebar** – Menu items and pages are defined in a single PHP array, no hardcoded HTML.
+✅ **Automatic Breadcrumbs** – The current page's breadcrumb and active menu state are resolved automatically.
+✅ **Dashboard Stat Cards** – Ready-made AdminLTE "small box" widgets for at-a-glance metrics.
+✅ **Profile Page** – A dedicated `profile.php` page wired into the same layout.
+✅ **Logout Confirmation** – SweetAlert2 confirmation dialog before logging out.
+✅ **Shared Layout** – `header.php` and `footer.php` keep every page consistent with one include.
 
-## 🚀 Usage 🎯  
+## ⚙️ Installation
 
-To use the application, open your **browser** 🌐 and navigate to:  
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Iqbolshoh/php-admin-panel.git
+cd php-admin-panel
+```
 
-🔗 `http://localhost/php-admin-panel`  
+### 2️⃣ Serve the project
+Use any PHP-compatible server (Apache, Nginx, XAMPP, WAMP, MAMP) and place the project files in the server's root directory (`htdocs`/`www`), or run PHP's built-in server:
+```bash
+php -S localhost:8000
+```
 
-This will load the **main page** of the application. 🎉  
+### 3️⃣ Open it in your browser
+```
+http://localhost:8000
+```
 
----
+## 📌 Adding Sidebar Menu Items
 
-## 📌 Adding Sidebar Menu Items 🏗️  
+The `$menuItems` array in `header.php` defines the sidebar. Each entry includes:
 
-The **`$menuItems`** array defines the **sidebar menu** 📜. Each item includes:  
-
-✅ **`menuTitle`** – The section name 🏷️ (e.g., `"Menu"`).  
-✅ **`icon`** – The section icon 🎨 (e.g., `"fas fa-home"`).  
-✅ **`pages`** – Subpages with `"title"` (name) and `"url"` (link) 🔗.  
-
-### 📝 Example: Adding/Updating Menu Items  
+✅ **`menuTitle`** – The section name (e.g. `"Dashboard"`).
+✅ **`icon`** – The section icon (e.g. `"fas fa-home"`).
+✅ **`pages`** – Subpages, each with a `"title"` and a `"url"`.
 
 ```php
 $menuItems = [
@@ -61,6 +75,18 @@ $menuItems = [
 ];
 ```
 
+The active menu item and breadcrumb trail are resolved automatically by matching the current page's filename against this array.
+
+## 📂 Project Structure
+
+```
+php-admin-panel/
+├── header.php    # <head>, navbar, sidebar, and $menuItems config
+├── footer.php    # Closing markup + logout confirmation script
+├── index.php     # Dashboard page (stat cards)
+├── profile.php   # Profile page
+└── src/images/   # Banner, logo, and profile picture assets
+```
 
 ## 🖥 Technologies Used
 ![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -71,71 +97,24 @@ $menuItems = [
 ![PHP](https://img.shields.io/badge/PHP-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
 
 ## 📜 License
-This project is open-source and available under the **MIT License**.
+This project is open-source and available under the [MIT License](./LICENSE).
 
-## 🤝 Contributing  
+## 🤝 Contributing
 🎯 Contributions are welcome! If you have suggestions or want to enhance the project, feel free to fork the repository and submit a pull request.
 
-## 📬 Connect with Me  
-💬 I love meeting new people and discussing tech, business, and creative ideas. Let’s connect! You can reach me on these platforms:
+## 📬 Connect with Me
+💬 I love meeting new people and discussing tech, business, and creative ideas. Let's connect! You can reach me on these platforms:
 
 <div align="center">
-  <table>
-    <tr>
-      <td>
-        <a href="https://iqbolshoh.uz" target="_blank">
-          <img src="https://img.icons8.com/color/48/domain.png" 
-               height="40" width="40" alt="Website" title="Website" />
-        </a>
-      </td>
-      <td>
-        <a href="mailto:iilhomjonov777@gmail.com" target="_blank">
-          <img src="https://github.com/gayanvoice/github-active-users-monitor/blob/master/public/images/icons/gmail.svg"
-               height="40" width="40" alt="Email" title="Email" />
-        </a>
-      </td>
-      <td>
-        <a href="https://github.com/iqbolshoh" target="_blank">
-          <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg"
-               height="40" width="40" alt="GitHub" title="GitHub" />
-        </a>
-      </td>
-      <td>
-        <a href="https://www.linkedin.com/in/iqbolshoh/" target="_blank">
-          <img src="https://github.com/gayanvoice/github-active-users-monitor/blob/master/public/images/icons/linkedin.svg"
-               height="40" width="40" alt="LinkedIn" title="LinkedIn" />
-        </a>
-      </td>
-      <td>
-        <a href="https://t.me/iqbolshoh_777" target="_blank">
-          <img src="https://github.com/gayanvoice/github-active-users-monitor/blob/master/public/images/icons/telegram.svg"
-               height="40" width="40" alt="Telegram" title="Telegram" />
-        </a>
-      </td>
-      <td>
-        <a href="https://wa.me/998997799333" target="_blank">
-          <img src="https://github.com/gayanvoice/github-active-users-monitor/blob/master/public/images/icons/whatsapp.svg"
-               height="40" width="40" alt="WhatsApp" title="WhatsApp" />
-        </a>
-      </td>
-      <td>
-        <a href="https://instagram.com/iqbolshoh_777" target="_blank">
-          <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
-               height="40" width="40" alt="Instagram" title="Instagram" />
-        </a>
-      </td>
-      <td>
-        <a href="https://x.com/iqbolshoh_777" target="_blank">
-          <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"
-               height="40" width="40" alt="X" title="X (Twitter)" />
-        </a>
-      </td>
-      <td>
-        <a href="https://www.youtube.com/@Iqbolshoh_777" target="_blank">
-          <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
-               height="40" width="40" alt="YouTube" title="YouTube" />
-        </a>
-      </td>
-    </tr>
-  </table>
+
+[![Website](https://img.shields.io/badge/Website-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://iqbolshoh.uz)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:iilhomjonov777@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/iqbolshoh)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/iqbolshoh/)
+[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/iqbolshoh_777)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/998997799333)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/iqbolshoh_777)
+[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/iqbolshoh_777)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@Iqbolshoh_777)
+
 </div>
