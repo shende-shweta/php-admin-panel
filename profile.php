@@ -1,7 +1,7 @@
-<?php include './header.php'; ?>
+<?php require_once './header.php'; ?>
 
 <div class="row">
     <!--  -->
 </div>
 
-<?php include './footer.php'; ?>
+<?php require_once './footer.php'; ?>

@@ -1,4 +1,4 @@
-<?php include './header.php'; ?>
+<?php require_once './header.php'; ?>
 
 <div class="row">
     <div class="col-lg-3 col-6">
@@ -61,4 +61,4 @@
     </div>
 </div>
 
-<?php include './footer.php'; ?>
+<?php require_once './footer.php'; ?>
