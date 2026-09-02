@@ -1,13 +1,7 @@
-/* ===================================
-   DASHBOARD.CSS - Dashboard Styling
-   =================================== */
-
-/* Dashboard Container */
 .dashboard-container {
   padding: 0;
 }
 
-/* Small Box / Stat Card */
 .small-box {
   border-radius: 6px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
@@ -36,7 +30,6 @@
   border-radius: 50%;
 }
 
-/* Small Box Inner Content */
 .small-box .inner {
   position: relative;
   z-index: 2;
@@ -63,7 +56,6 @@
   opacity: 0.9;
 }
 
-/* Icon */
 .small-box .icon {
   position: absolute;
   right: 1.5rem;
@@ -74,7 +66,6 @@
   z-index: 1;
 }
 
-/* Footer */
 .small-box .small-box-footer {
   display: block;
   margin-top: 1rem;
@@ -105,7 +96,6 @@
   transform: translateX(4px);
 }
 
-/* Color Variants */
 .small-box.bg-primary {
   background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
   color: #fff;
@@ -142,7 +132,6 @@
   color: #fff;
 }
 
-/* Ionicons for Dashboard */
 .ion {
   font-family: Ionicons;
   speak: none;
@@ -155,12 +144,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Dashboard Row */
 .dashboard-row {
   margin-bottom: 2rem;
 }
 
-/* Dashboard Title */
 .dashboard-title {
   font-size: 1.5rem;
   font-weight: 600;
@@ -168,18 +155,12 @@
   color: #333;
 }
 
-/* ===================================
-   RESPONSIVE DESIGN
-   =================================== */
-
-/* Large Desktops (4 columns) */
 @media (min-width: 1200px) {
   .small-box {
     margin-bottom: 1.5rem;
   }
 }
 
-/* Desktops (3 columns) */
 @media (min-width: 992px) and (max-width: 1199px) {
   .small-box {
     margin-bottom: 1.5rem;
@@ -194,7 +175,6 @@
   }
 }
 
-/* Tablets (2 columns) */
 @media (max-width: 991px) {
   .col-lg-3.col-6 {
     flex: 0 0 50%;
@@ -214,7 +194,6 @@
   }
 }
 
-/* Mobile (1 column) */
 @media (max-width: 575px) {
   .col-lg-3.col-6 {
     flex: 0 0 100%;
@@ -244,7 +223,6 @@
   }
 }
 
-/* Print Styles */
 @media print {
   .small-box {
     box-shadow: 0 0 0 1px #dee2e6;
@@ -256,7 +234,6 @@
   }
 }
 
-/* Accessibility */
 .small-box a:focus-visible {
   outline: 2px solid #007bff;
   outline-offset: 2px;
