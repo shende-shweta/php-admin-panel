@@ -145,7 +145,6 @@ $user_profile_picture = isset($_SESSION['user_profile_picture']) ? htmlspecialch
                             </div>
                         </div>
 
-                        <!-- Dropdown Body -->
                         <div class="dropdown-divider"></div>
                         <a href="./profile.php" class="dropdown-item">
                             <i class="fas fa-user"></i> Profile

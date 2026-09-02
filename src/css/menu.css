@@ -1,15 +1,9 @@
-/* ===================================
-   MENU.CSS - Menu/Sidebar Styling
-   =================================== */
-
-/* Sidebar Container */
 .sidebar {
   padding: 1rem 0;
   overflow-y: auto;
   height: calc(100vh - 200px);
 }
 
-/* User Panel */
 .user-panel {
   padding: 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -49,7 +43,6 @@
   font-size: 0.95rem;
 }
 
-/* Navigation Menu */
 .nav-sidebar {
   padding: 0;
   margin: 0;
@@ -85,7 +78,6 @@
   font-weight: 600;
 }
 
-/* Nav Icon */
 .nav-sidebar .nav-link .nav-icon {
   width: 2rem;
   display: flex;
@@ -95,14 +87,12 @@
   font-size: 1.1rem;
 }
 
-/* Nav Text */
 .nav-sidebar .nav-link p {
   margin: 0;
   font-size: 0.95rem;
   flex: 1;
 }
 
-/* Submenu Items */
 .nav-sidebar .nav-treeview {
   padding: 0;
   margin: 0;
@@ -142,7 +132,6 @@
   font-size: 0.7rem;
 }
 
-/* Submenu Toggle Arrow */
 .nav-sidebar .nav-link i.right {
   margin-left: auto;
   transition: transform 0.3s ease;
@@ -152,7 +141,6 @@
   transform: rotate(-180deg);
 }
 
-/* Menu Item Grouping */
 .nav-item.has-treeview {
   margin-bottom: 0.25rem;
 }
@@ -160,10 +148,6 @@
 .nav-item.has-treeview > .nav-link {
   cursor: pointer;
 }
-
-/* ===================================
-   RESPONSIVE DESIGN
-   =================================== */
 
 @media (max-width: 768px) {
   .sidebar {
@@ -203,7 +187,6 @@
   }
 }
 
-/* Scrollbar Styling */
 .sidebar::-webkit-scrollbar {
   width: 6px;
 }
